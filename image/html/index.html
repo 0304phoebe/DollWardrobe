@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">　<!-- 我們的CSS-->
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 400px)" href="../css/style_RWD.css">　<!-- 我們的CSS-->
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/highlight.pack.js"></script>
+	<script type="text/javascript" src="../js/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/examples.js"></script>
+    
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+	
+	<script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
+    <title>娃娃衣櫃</title>
+</head>
+
+<body>
+
+<!------------------------------- RWD ------------------------------->
+	<div id="all_rwd">
+        <div id="rwd_door_trigger"></div>
+        <div id="rwd_door">
+           <img id="rwd_door_l" src="../img_rwd/圖層 1.png">
+           <img id="rwd_wardrobe" src="../img_rwd/圖層 3.png">
+           <img id="rwd_tital" src="../img_rwd/圖層 4.png">
+           <img id="rwd_door_r" src="../img_rwd/圖層 2.png">
+        </div>
+        <div id="rwd_cloth_trigger"></div>
+        <div id="rwd_cloth_out_trigger"></div>
+        <div id="rwd_cloth">
+            <img id="rwd_cloth_head" src="../img_rwd/頭上的布.png">
+            <img id="rwd_cloth_foot" src="../img_rwd/底下的布.png">
+            <img id="rwd_scissors" src="../img_rwd/剪刀.png">
+        </div>
+        <div id="rwd_scissors_out_trigger"></div>
+        <div id="rwd_doll">
+            <img id="rwd_doll_dodo" src="../img_rwd/doll.png">
+            <img id="rwd_ruler_1" src="../img_rwd/尺_1.png">
+            <img id="rwd_ruler_2" src="../img_rwd/尺_2.png">
+            <img id="rwd_balloon_1" src="../img_rwd/balloon_1.png">
+            <img id="rwd_balloon_2" src="../img_rwd/balloon_2.png">
+            <img id="rwd_balloon_3" src="../img_rwd/balloon_3.png">
+        </div>
+        <div id="rwd_dodo_out"></div>
+        <div id="rwd_ruler_1_out"></div>
+        <div id="rwd_ruler_2_out"></div>
+        <div id="rwd_balloon_1_out"></div>
+        <div id="rwd_ruleandballoon_kiete"></div>
+        <div id="rwd_balloon_2_out"></div>
+        <div id="rwd_balloon_3_out"></div>
+        <div id="rwd_ruleandballoon2_kiete"></div>
+        <div id="rwd_petal_out"></div>
+        <div id="rwd_petal">
+            <img id="rwd_petal_1" src="../img_rwd/圖層 21.png">
+            <img id="rwd_petal_2" src="../img_rwd/圖層 20.png">
+            <img id="rwd_petal_3" src="../img_rwd/圖層 19.png">
+            <img id="rwd_petal_4" src="../img_rwd/圖層 18.png">
+            <img id="rwd_petal_5" src="../img_rwd/圖層 17.png">
+            <img id="rwd_petal_6" src="../img_rwd/圖層 16.png">
+            <img id="rwd_petal_7" src="../img_rwd/圖層 15.png">
+            <img id="rwd_petal_8" src="../img_rwd/圖層 14.png">
+            <img id="rwd_petal_9" src="../img_rwd/圖層 13.png">
+            <img id="rwd_petal_10" src="../img_rwd/圖層 12.png">
+            <img id="rwd_petal_11" src="../img_rwd/圖層 11.png">
+            <img id="rwd_petal_12" src="../img_rwd/圖層 10.png">
+            <img id="rwd_petal_13" src="../img_rwd/圖層 9.png">
+            <img id="rwd_petal_14" src="../img_rwd/圖層 8.png">
+            <img id="rwd_petal_15" src="../img_rwd/圖層 7.png">
+        </div>
+        <img id="rwd_kimono" src="../img_rwd/和服.png">
+        <div id="rwd_pin_kimono"></div>
+        <div id="firework_rwd_css"></div>
+        <div id="rwd_out_firework_first"></div>
+        <div id="rwd_out_firework_second"></div>
+        <div id="rwd_out_firework_third"></div>
+        <div id="rwd_firework_all">
+            <img id="rwd_firework_1" src="../img_rwd/煙火1.png">
+            <img id="rwd_firework_2" src="../img_rwd/煙火2.png">
+            <img id="rwd_firework_3" src="../img_rwd/煙火3.png">
+            <img id="rwd_firework_4" src="../img_rwd/煙火4.png">
+            <img id="rwd_firework_5" src="../img_rwd/煙火5.png">
+            <img id="rwd_firework_6" src="../img_rwd/煙火6.png">
+        </div>
+        <div id="rwd_kiete_firework_first"></div>
+        <div id="rwd_kiete_firework_second"></div>
+        <div id="rwd_kiete_firework_third"></div>
+        <div id="rwd_dodo_kiete"></div>
+        <div id="rwd_heart_out"></div>
+        <div id="rwd_text1_out"></div>
+        <div id="rwd_text2_out"></div>
+        <div id="rwd_heart_and_text">
+            <div id="rwd_heart"></div>
+            <img id="rwd_heart_text_1" src="../img_rwd/心動了嗎.png">
+            <img id="rwd_heart_text_2" src="../img_rwd/聯絡我們.png">
+        </div>
+        <div id="rwd_letter_out"></div>
+        <div id="rwd_letter">
+            <img id="rwd_letterpaper" src="../img_rwd/信件.png"> 
+            <img id="rwd_envelope_2" src="../img_rwd/信2.png">
+            <img id="rwd_envelope_1" src="../img_rwd/信1.png">
+        </div>
+        <form id="rwd_letter_text" action="https://formspree.io/s110619046@stu.ntue.edu.tw" method="POST">
+            您的大名：<br><input type="text" name="name"><br><br>
+            您的Email：<br><input type="email" name="_replyto"><br><br>
+            內容：<br><input name="Content"></input><br><br><br>
+               <input type="submit" value="Send" id="rwd_send">
+        </form>
+	</div>
+<!------------------------------- RWD ------------------------------->
+
+    <div id="all">
+    <div id="trigger_scissorandcloth"></div>
+    <div id="trigger_pin_sciandcloth"></div>    
+    <div id="trigger_sciandcloth_out"></div>
+       
+    <div id="trigger_tit"></div>
+
+    <div id="trigger_door"></div>
+
+    <div id="pin2">
+        <div id="door">
+           <img id="door_l" src="../img/門_左.png">
+           <img id="wardrobe" src="../img/衣櫃.png">
+            <img id="door_r" src="../img/門_右.png">
+            <img id="tital" src="../img/tital.png">
+        </div>
+		<img id="cloth" src="../img/布.PNG">
+        <img id="cloth_2" src="../img/布_1.png">
+        <img id="scissors" src="../img/剪刀.png">
+    </div>
+            
+
+    <div id="trigger_doll_pin"></div>
+    <div id="trigger_clothes_pin"></div>
+
+    <div id="trigger_balloon_2_3_disappear"></div>
+    <div id="pin5">    
+	    <div id="pin1">
+            <img id="doll" src="../img/娃娃.png">
+        </div>
+
+        <div id="trigger_ruler_1"></div>
+        <div id="trigger_ruler_1_pin"></div>
+        <div id="trigger_ruler_2"></div>
+        <div id="trigger_balloon_1"></div>
+        <div id="trigger_balloon_1_disappear"></div>
+        
+        <img id="ruler_1" src="../img/尺_1.png">
+        <img id="ruler_2" src="../img/尺_2.png">
+        <img id="balloon_1" src="../img/balloon_1.png">
+
+
+        <div id="trigger_petal"></div>
+        <div id="trigger_petal_dis"></div>
+        <div id="petal">
+            <img id="petal_1" src="../img/petal-1.png" >
+            <img id="petal_2" src="../img/petal-2.png">
+            <img id="petal_3" src="../img/petal-3.png">
+            <img id="petal_4" src="../img/petal-4.png">
+            <img id="petal_7" src="../img/petal-5.png">
+            <img id="petal_6" src="../img/petal-6.png">
+            <img id="petal_5" src="../img/petal-7.png">
+            <img id="petal_11" src="../img/petal-8.png">
+            <img id="petal_10" src="../img/petal-9.png">
+            <img id="petal_9" src="../img/petal-10.png">
+            <img id="petal_13" src="../img/petal-11.png">
+            <img id="petal_12" src="../img/petal-12.png">
+            <img id="petal_8" src="../img/petal-13.png">
+            <img id="petal_14" src="../img/petal-14.png">
+            <img id="petal_15" src="../img/petal-15.png">
+        </div>
+
+        <div id="trigger_balloon_2"></div>
+        <img id="balloon_2" src="../img/balloon_2.png">
+
+        <div id="trigger_balloon_3"></div>
+        <img id="balloon_3" src="../img/balloon_3.png">
+        <img id="clothes" src="../img/和服.png">
+    </div>
+    
+    <div id="trigger_firework_1_s"></div>
+    <div id="trigger_firework_1_e"></div>
+
+    <div id="trigger_firework_2_s"></div>
+    <div id="trigger_firework_2_e"></div>
+
+    <div id="trigger_firework_3_s"></div>
+    <div id="trigger_firework_3_e"></div>
+
+    <div  id="firework" >
+        <img id="firework_1" src="../img/firework_1_.png">
+        <img id="firework_2" src="../img/firework_2.png">
+        <img id="firework_5" src="../img/firework_5.png">
+        <img id="firework_6" src="../img/firework_6.png">
+        <img id="firework_7" src="../img/firework_7.png">
+        <img id="firework_8" src="../img/firework_8.png">
+        <img id="firework_9" src="../img/firework_9.png">    
+    </div>
+    <div id="trigger_doll_disappear"></div>
+    <div id="trigger_heart"></div>
+    <div id="trigger_touched"></div>
+    <div id="trigger_contact"></div>
+    <div id="trigger_upup"></div> 
+
+    <div id="heart_and_text">
+        <div id="heart"></div>
+        <img id="touched" src="../img/心動.png">
+        <img id="contact" src="../img/contact.png">
+    </div>
+    
+    <form id="text" action="https://formspree.io/s110619046@stu.ntue.edu.tw" method="POST">
+        您的大名：<input type="text" name="name"><br><br>
+        您的Email：<input type="email" name="_replyto"><br><br>
+        內容：<input name="Content"></input><br><br><br>
+           <input type="submit" value="Send" id="Send">
+    </form>
+
+        <div id="trigger_letter"></div>
+        <div id="letter">
+            <img id="letterpaper" src="../img/信紙.png" width="550px"> 
+            <img id="envelope_1" src="../img/信封.png">
+            <img id="envelope_2" src="../img/信封底.png">
+        </div>
+
+
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/rwd.js"></script>
+</body>
+</html>
